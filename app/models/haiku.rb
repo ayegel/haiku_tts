@@ -1,10 +1,24 @@
 class Haiku < ApplicationRecord
+    belongs_to :user
+    has_many :ratings, dependent: :destroy
+    
     #Use validate when its a custom method
     validate :valid_poem
     
     #Use when valid method
     validates :title, presence: true
     validates :poem, uniqueness: true, presence: true
+    
+    def average_rating
+        total_number_of_ratings = self.ratings.count
+        if total_number_of_ratings == 0
+            return 0
+        else
+            total_added_numbers = self.ratings.sum(&:vote)
+            return (total_added_numbers.to_f / total_number_of_ratings.to_f).round(2)
+        end
+    end  
+    
     
     def valid_poem
         is_valid = true
@@ -18,15 +32,15 @@ class Haiku < ApplicationRecord
             line2 = poem.split("\n")[1]
             line3 = poem.split("\n")[2]
             
-            if line1.to_phrase.syllables != 5
+            if line1.blank? || line1.to_phrase.syllables != 5
                is_valid = false
             end
             
-            if line2.to_phrase.syllables != 7
+            if line2.blank? || line2.to_phrase.syllables != 7
                 is_valid = false
             end
         
-            if line3.to_phrase.syllables != 5
+            if line3.blank? || line3.to_phrase.syllables != 5
                 is_valid = false
             end
         end

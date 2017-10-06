@@ -1,4 +1,16 @@
 <div class='user-show'>
+    <% @user.haikus.each do |haiku| %>
+    <%= link_to haiku.title, haiku %>
+          <div id="ui-content" style="width: 100%;">
+            <%= simple_format(haiku.poem) %>
+          </div>
+          <br />
+<% end %>
+      
+  
+  
+  
+  
   <div data-role="main" class="ui-content">
     <p>Haiku Haiku Haiku to You Too!.</p>
   </div>

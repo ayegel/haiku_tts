@@ -39,11 +39,8 @@
         <% end %>
       </ul>
     <% end %>
-    <%# f.label :user %>:
-    <%# f.collection_select :user_id, User.all.order(:name), :id, :name, include_blank: true %><br />
-
-    <%= f.label :user_email %>:
-    <%= f.text_field :user_email %><br />
+    <%= f.label :user %>:
+    <%= f.collection_select :user_id, User.all.order(:name), :id, :name, include_blank: true %><br />
 
     <%= f.label :title %>:
     <%= f.text_field :title %><br />

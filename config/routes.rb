@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get '/rules', to: 'haikus#rules'
 
 
-  resources :haikus
+  resources :haikus do
+    resource :ratings
+  end    
   resources :users
 end
