@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Vote:</strong>
+  <%= @rating.vote %>
+</p>
+
+<%= link_to 'View List of Ratings', haiku_ratings_path(@haiku) %> |
+<%= link_to 'Back To Haiku', @haiku %>

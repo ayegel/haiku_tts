@@ -1,0 +1,23 @@
+<%= form_for [@haiku, @rating] do |form| %>
+  <% if rating.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rating.errors.count, "error") %> prohibited this rating from being saved:</h2>
+
+      <ul>
+      <% rating.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form.label :user %>:
+  <%= form.collection_select :user_id, User.all.order(:name), :id, :name, include_blank: true %><br/>
+
+  <%= form.label :vote %>:
+  <%= form.select :vote, [1, 2, 3, 4, 5] %><br/>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

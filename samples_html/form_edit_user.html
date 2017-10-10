@@ -1,17 +1,89 @@
-<!--
-requirements
-  * html format
-  * header
-    * title
-  * body
-    * header
-    * image
-    * form (This form does not need to work)
-      * input field for email
-      * input field for password
-      * input field to confirm password
-      * any other form fields you want to add
-      * submit button
-    * anything else you want to add to the page
-    * extra challenge: html unordered list.  Each bullet point is a link to a different page in this folder.
--->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <!-- Link to CSS Sheet -->
+    <link type="text/css" rel="stylesheet" href="../samples_html/assets/stylesheets/style.css">
+  </head>
+  <body>
+<!-- Top -->
+<!-- Jumbotron -->
+      <div class="moveup">
+        <div class="jumbotron jumbotron-fluid top">
+          <div class="container">
+            <h1 class="display-3">User Information</h1>
+          </div>
+        </div>
+      </div>
+<!-- Middle -->
+<!-- Image Cards -->
+    <div class="middle movedown">
+        <div class="card-deck">
+          <div class="card midbackground">
+            <img class="card-img-top" src="https://goo.gl/GVbDwQ" alt="Card image cap">
+          </div>
+          <div class="card midbackground">
+            <img class="card-img-top" src="https://goo.gl/hV4gGn" alt="Card image cap">
+          </div>
+          <div class="card midbackground">
+            <img class="card-img-top" src="https://goo.gl/E68i8g" alt="Card image cap">
+          </div>
+        </div><br><br>
+<!-- Form -->
+    <form>
+      <div class="form-row">
+        <div class="col-sm-3">
+          <label for="inlineFormInputName" class="sr-only"></label>
+          <input type="text" class="form-control mb-2 mb-sm-0" id="inlineFormInputName" placeholder="E-Mail">
+        </div>
+        <div class="col-sm-3">
+          <label for="inlineFormInputName" class="sr-only"></label>
+          <input type="password" class="form-control mb-2 mb-sm-0" id="inlineFormInputName" placeholder="Password">
+        </div>
+        <div class="col-sm-3">
+          <label for="inlineFormInputName" class="sr-only"></label>
+          <input type="password" class="form-control mb-2 mb-sm-0" id="inlineFormInputName" placeholder="Confirm Password">
+        </div>
+        <div class="col-sm-3">
+          <label for="inlineFormInputName" class="sr-only"></label>
+          <input type="text" class="form-control mb-2 mb-sm-0 incolor" id="inlineFormInputName" placeholder="Full Name">
+        </div>
+      </div><br><br>
+        <div>
+          <button type="submit" class="btn btn-primary subone">Submit</button>
+        </div>
+    </form>
+    </div>
+<!-- Bottom -->
+<div class="bottom">
+<div class="btnbox navcon">
+  <button type="button" class="nav navbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="navtext">Navigate This Page</span></button>
+    <span class="sr-only">Toggle Dropdown</span>
+  <div class="dropdown-menu">
+    <div class="navbg">
+      <a class="nav-link active col-1" href="form_create_haiku.html">Create Haiku</a>
+      <a class="nav-link active col-1" href="form_edit_haiku.html">Edit Haiku</a>
+      <a class="nav-link active col-1" href="form_edit_user.html">Edit User</a>
+      <a class="nav-link active col-1" href="form_signup_user.html">Signup User</a>
+      <a class="nav-link active col-1" href="haiku_list.html">Haiku List</a>
+      <a class="nav-link active col-1" href="haiku_one.html">Haiku One</a>
+      <a class="nav-link active col-1" href="haiku_rules.html">Haiku Rules</a>
+      <a class="nav-link active col-1" href="index.html">Index</a>
+      <a class="nav-link active col-1" href="user_list.html">User List</a>
+      <a class="nav-link active col-1" href="user_one.html">User One</a>
+  </div>
+  </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>

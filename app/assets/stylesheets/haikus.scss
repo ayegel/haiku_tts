@@ -1,0 +1,143 @@
+.haiku-edit {
+    font-family: 'Anton', sans-serif;
+    margin: auto;
+    color: #3E76C5;
+}
+
+.haiku-edit .top {
+    background-color: #F25266;
+    border: #666561 solid 1em;
+}
+
+.haiku-edit h1 {
+    color:#F4EF6B;
+    text-align: center;
+    text-shadow:
+    1px 2px 0px #666561,
+    2px 3px 15px #EDEDED;
+}
+
+.haiku-edit .middle {
+    background-color:#ECECEC;
+}
+
+
+.haiku-edit .bottom {
+    background-color:#F25266;
+    border: #666561 solid 1em;
+}
+
+.haiku-edit ul {
+    list-style: none;
+    column-count: 10;
+}
+
+.haiku-edit .edit_haiku ul {
+    list-style: none;
+    column-count: auto;
+}
+
+
+.haiku-edit a:link {
+    color: #6DBF2E;
+}
+
+.haiku-edit a:visited {
+    color: #6DBF2E;
+}
+
+.haiku-edit a:hover {
+    color: yellow;
+}
+
+.haiku-edit .movedown {
+    margin-top: -1.97em;
+    border-color: #666561;
+}
+
+.haiku-edit .midbackground {
+    background-color:#666561;
+}
+
+.haiku-edit .subone {
+    width: 100%;
+    background-color: #4E9AFB;
+}
+
+.haiku-edit .incolor {
+    color:red;
+}
+
+.haiku-home {
+  background-image:url("http://cdn.wallpapersafari.com/96/26/z7T4hW.jpg");
+}
+
+
+
+.haiku-home h1 {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Palatino Linotype', serif;
+    color: black;
+}
+
+
+.haiku-home h2 {
+    font-size: 56px;
+}
+
+.haiku-home p {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.haiku-home .description {
+    text-decoration: underline;
+}
+
+.haiku-home .pic {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+.haiku-home ul {
+    column-count: 10;
+    list-style: none;
+    width:100%;
+    font-size: 20px;
+}
+
+.haiku-home a:link {
+    color: black;
+}
+
+.haiku-home a:visited {
+    color: powderblue;
+}
+
+.haiku-home a:hover {
+    color: pink;
+}
+
+.haiku-home .poems {
+    background-color: pink;
+}
+.haiku-new {
+  background-color: #DAEE13;
+}
+
+.haiku-new h1 {
+  text-align: center;
+  height: 50px;
+  background-color: #DAEE13;
+  color: white;
+}
+
+.haiku-new h5,
+.haiku-new h6 {
+  text-align: center;
+  color: darkgreen;
+}

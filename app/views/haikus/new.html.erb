@@ -1,0 +1,66 @@
+<div class='haiku-new'>
+  <h1>
+    <span style="color:darkgreen;">
+      To Haiku, To You
+    </span>
+  </h1>
+
+  <div style=background-color: #FF00FF;>
+    <h3> Are you up for the test? Bring your Best!</h3>
+
+    <div style="text-align: center:
+         font-family: fantasy, cursive, serif;">
+      <img src="https://www.readcwbooks.com/books.jpg" width="125" />
+    </div>
+
+    <h4>
+      We are delving into the mysteries of Haikus with this challenge
+    </h4>
+
+    <p> {
+        font: 100 3em sans-serif;
+        color: gold;
+        text-decoration: overline wavy yellowgreen;
+        } Here is a perfect example:</p>
+
+    <h5>Welcome to Haikus</h5>
+    <h5>When submitting your Haiku</h5>
+    <h5>Bring the best of You</h5>
+
+    <p>
+      Try it for yourself and we will be the judge! To see if you have what it takes to be a
+      HAIKU MASTER, just send in your haiku in the form below and submit. Don't forget your
+      email address.
+      <h2>{
+          text-shadow: 4px 4px;
+          Happy Haiku Hunting}</h2>
+    </p>
+  </div>
+
+  <%= form_for @haiku do |f| %>
+    <% if @haiku.errors.any? %>
+      <h5>Errors</h5>
+      <ul>
+        <% @haiku.errors.full_messages.each do |message| %>
+          <li><p><%= message %></p></li>
+        <% end %>
+      </ul>
+    <% end %>
+    <%= f.label :user %>:
+    <%= f.collection_select :user_id, User.all.order(:name), :id, :name, include_blank: true %><br />
+    
+    <%= f.label :title %>:
+    <%= f.text_field :title %><br />
+
+    <%= f.label :poem %>:
+    <%= f.text_area :poem, rows: 3 %><br />
+
+    <%= f.submit "Save changes" %>
+  <% end %>
+
+  <h6>
+    Any questions or comments feel free to
+    <a href="mail to:msnickole@gmail.com">email</a>
+    us.
+  </h6>
+</div>

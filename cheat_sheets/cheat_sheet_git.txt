@@ -1,0 +1,53 @@
+git branch -d
+    Deletes a branch if it has been fully merged (in Github)
+    
+git branch -D
+    Deletes a branch locally on your computer (not in Github)
+    
+git branch
+    Displays a listing of current branches
+
+git checkout <branch>
+            this command switch branches to the one you specify in <branch> 
+
+git checkout -b <branch>
+            <branch> denotes the creation of a new branch. By issuing this command, you are creating a new branch with the name you choose. 
+            This also switches your working directory to the new branch.
+
+git merge <branch>
+            This command merges the changes in your current branch INTO the branch you define in <branch>.
+ 
+git clone url
+  clones a repository into a new directory, if repository is a url. (url is the address of the webpage or reference to web resource that specifies its exact location)      
+  ex. wikipedia.org is an example of a url
+git stash
+    the dirty state of your working directory — that is, your modified tracked files and staged changes — and saves it on a stack of unfinished changes that you can reapply at any time.
+    example: https://www.atlassian.com/git/tutorials/git-stash
+git init
+    creates a git subdirectory with objects , refs/heads , refs/tags , and template files
+    example: https://git-scm.com/docs/git-init
+
+git status
+    Dispays files that have changed in your repository as it relates to the latest commit. Shows what files were modified
+    green is ready
+
+git diff
+    Displays differences in changes from master to your version
+
+git remote add origin (url)
+    Copies everything from the url repository into your workspace
+
+git add .
+    "Prepares all files in local branches to be comitted to repository.
+
+git commit -m"FILE DESCRIPTION"
+    "prepares file to be pushed and adds a description to the file."
+
+git push
+    "Uploads files from local branch to remote repository."
+
+git remote add username_of_repo url_of_repo
+    "adds a connection to the original repository"
+
+git remote -v
+    "test connection to the original repository (see command above.)" - Brian

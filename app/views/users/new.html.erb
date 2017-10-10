@@ -1,0 +1,26 @@
+<div class='user-new'>
+  <h1>Haiku Signup Form</h1>
+
+  <p> Complete the information form below.</p>
+
+  <%= form_for @user do |f| %>
+    <% if @user.errors.any? %>
+      <h5>Errors</h5>
+      <ul>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><p><%= message %></p></li>
+        <% end %>
+      </ul>
+    <% end %>
+
+    <%= f.label :email %>
+    <%= f.text_field :email, placeholder: "E-Mail"%>
+
+    <%= f.label :name %>
+    <%= f.text_field :name, placeholder: "Name"%>
+
+    <br />
+    <%= f.submit "Submit", class: "btn btn-primary subone" %>
+
+  <% end %>
+</div>

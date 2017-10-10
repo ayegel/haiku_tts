@@ -1,0 +1,31 @@
+<div class='user-show'>
+  <% @user.haikus.each do |haiku| %>
+    <%= link_to haiku.title, haiku %>
+    <div id="ui-content" style="width: 100%;">
+      <%= simple_format(haiku.poem) %>
+    </div>
+    <br />
+  <% end %>
+
+  <hr/>
+
+  <p style="font-family:veranda; color: orange;">
+    Details about <%= @user.name %>
+  </p>
+
+  <p style="font-family:veranda; color: orange;">
+     Favorite types of Haikus to write,
+     Number of Haikus written,
+     How User started writing Haikus, and
+     What kind of snack food does user like. Trying to do Thursday's homework and font isn't changing. Okay, Now it changed and holy shmoly
+     it is underlined now.
+   </p>
+
+   <hr />
+   <%= link_to "Edit This User", edit_user_path(@user) %>
+   <br />
+
+   <%= link_to 'Delete This User', [@user], method: :delete %>
+
+  <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" width="50px"/>
+</div>

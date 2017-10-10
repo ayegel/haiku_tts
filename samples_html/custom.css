@@ -1,0 +1,32 @@
+h1 {
+    height: 50px;
+    background-color: red;
+    color: white;
+}
+body {    
+    font-family: 'Encode Sans Semi Condensed', sans-serif; 
+}
+
+h3 {
+       /* border on all sides */
+        border: 20px red solid;
+        background-color: black;
+        color: blue;
+}
+
+.image {
+
+    text-align: center;
+}
+div {
+         color: pink ;
+    }
+    
+  .marginExample {     
+      background-color: #b20000;     
+      margin: 30px;     
+      padding: 30px; 
+      border: 5px yellow solid;
+         
+   
+     

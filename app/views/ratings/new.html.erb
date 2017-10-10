@@ -1,0 +1,6 @@
+<p id="notice"><%= notice %></p>
+
+<%= render 'form', rating: @rating %>
+
+<%= link_to 'View List of Ratings', haiku_ratings_path(@haiku) %> |
+<%= link_to 'Back To Haiku', @haiku %>

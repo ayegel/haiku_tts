@@ -1,3 +1,6 @@
+Counting Syllables
+http://www.phonicsontheweb.com/syllables.php
+
 There are only three lines, totaling 17 syllables.
 The first line is 5 syllables.
 The second line is 7 syllables.

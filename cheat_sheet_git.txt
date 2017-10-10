@@ -16,26 +16,19 @@ git checkout -b <branch>
 
 git merge <branch>
             This command merges the changes in your current branch INTO the branch you define in <branch>.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9615d9275494ed455fed91b9e1c2be29af202362
- 
+            
 git clone url
   clones a repository into a new directory, if repository is a url. (url is the address of the webpage or reference to web resource that specifies its exact location)      
   ex. wikipedia.org is an example of a url
+  
 git stash
     the dirty state of your working directory — that is, your modified tracked files and staged changes — and saves it on a stack of unfinished changes that you can reapply at any time.
     example: https://www.atlassian.com/git/tutorials/git-stash
+    
 git init
     creates a git subdirectory with objects , refs/heads , refs/tags , and template files
     example: https://git-scm.com/docs/git-init
-<<<<<<< HEAD
-=======
->>>>>>> 920a3c9859de1af3458da0fa5b695da116e75bc1
-=======
->>>>>>> 9615d9275494ed455fed91b9e1c2be29af202362
-
+    
 git status
     Dispays files that have changed in your repository as it relates to the latest commit. Shows what files were modified
     green is ready

@@ -1,0 +1,111 @@
+.user-edit {
+    font-family: 'Anton', sans-serif;
+    margin: auto;
+    color: #3E76C5;
+}
+
+.user-edit .top {
+    background-color: #F25266;
+    border: #666561 solid 1em;
+}
+
+.user-edit h1 {
+    color:#F4EF6B;
+    text-align: center;
+    text-shadow:
+    1px 2px 0px #666561,
+    2px 3px 15px #EDEDED;
+}
+
+.user-edit .middle {
+    background-color:#ECECEC;
+}
+
+
+.user-edit .bottom {
+    background-color:#F25266;
+    border: #666561 solid 1em;
+}
+
+.user-edit ul {
+    list-style: none;
+    column-count: 10;
+}
+
+
+.user-edit a:link {
+    color: #6DBF2E;
+}
+
+.user-edit a:visited {
+    color: #6DBF2E;
+}
+
+.user-edit a:hover {
+    color: yellow;
+}
+
+.user-edit .movedown {
+    margin-top: -1.97em;
+    border-color: #666561;
+}
+
+.user-edit .midbackground {
+    background-color:#666561;
+}
+
+.user-edit .subone {
+    width: 100%;
+    background-color: #4E9AFB;
+}
+
+.user-edit .incolor {
+    color:red;
+}
+
+.user-new {
+    font-family: 'Cinzel', serif;
+    /* background-image: url(https://cdn.pixabay.com/photo/2017/04/15/11/51/mt-fuji-2232246_960_720.jpg) */
+}
+
+.user-new h1 {
+    font-size: 40px;
+}
+
+.user-new h2{
+   font-size: 25px;
+
+}
+
+.user-new a:hover {
+    color: darkblue;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.user-show {
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
+
+.user-show div {
+  width: 180px;
+  background-color: gold;
+}
+
+.user-show h1 {
+  height: 200px;
+  background-color: yellow;
+  color: orange;
+}
+
+.user-show .uppercase {
+    text-transform: uppercase;
+}
+
+.user-show .lowercase {
+    text-transform: lowercase;
+}
+
+.user-show .capitalize {
+    text-transform: capitalize;
+}

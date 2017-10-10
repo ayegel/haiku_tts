@@ -1,0 +1,61 @@
+<div user="user-edit">
+  <!-- Jumbotron -->
+  <div class="moveup">
+    <div class="jumbotron jumbotron-fluid top">
+      <div class="container">
+        <h1 class="display-3"><%= @user.name %> Information</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image Cards -->
+    <div class="middle movedown">
+
+      <div class="card-deck">
+        <div class="card midbackground">
+          <img class="card-img-top" src="https://goo.gl/GVbDwQ" alt="Card image cap">
+        </div>
+
+        <div class="card midbackground">
+          <img class="card-img-top" src="https://goo.gl/hV4gGn" alt="Card image cap">
+        </div>
+
+        <div class="card midbackground">
+          <img class="card-img-top" src="https://goo.gl/E68i8g" alt="Card image cap">
+        </div>
+      </div>
+
+      <br />
+
+      <!-- Form -->
+      <%= form_for @user do |f| %>
+        <% if @user.errors.any? %>
+          <h5>Errors</h5>
+          <ul>
+            <% @user.errors.full_messages.each do |message| %>
+              <li><p><%= message %></p></li>
+            <% end %>
+          </ul>
+        <% end %>
+
+        <div class="form-row">
+          <div class="col-sm-6">
+            <%= f.label :email, class:  "sr-only" %>
+            <%= f.text_field :email, class: "form-control mb-2 mb-sm-0", placeholder: "E-Mail"%>
+          </div>
+
+          <div class="col-sm-6">
+            <%= f.label :name, class:  "sr-only" %>
+            <%= f.text_field :name, class: "form-control mb-2 mb-sm-0", placeholder: "Name"%>
+          </div>
+        </div>
+
+        <br />
+        <%= f.submit "Save changes", class: "btn btn-primary subone" %>
+
+      <% end %>
+    </div>
+
+    <br>
+    <br>

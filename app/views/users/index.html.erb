@@ -1,0 +1,11 @@
+<h4>All Users</h4>
+
+<img src="http://weknowyourdreams.com/images/mountain/mountain-07.jpg" alt="Mountain View" style="width:304px;height:228px;">
+
+<ul>
+  <% @users.each do |user| %>
+    <li>
+      <%= link_to user.name, user %>
+    </li>
+  <% end %>
+</ul>
