@@ -22,4 +22,8 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: haiku_production
+  username: haiku
+  password: <%= ENV['YOU_SHOULD_ADD_A_PASSWORD'] %>
