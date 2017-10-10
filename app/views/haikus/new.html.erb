@@ -5,10 +5,11 @@
     </span>
   </h1>
 
-  <div style=background-color: #DAEE13;>
+  <div style=background-color: #FF00FF;>
     <h3> Are you up for the test? Bring your Best!</h3>
 
-    <div style="text-align: center">
+    <div style="text-align: center:
+         font-family: fantasy, cursive, serif;">
       <img src="https://www.readcwbooks.com/books.jpg" width="125" />
     </div>
 
@@ -16,7 +17,11 @@
       We are delving into the mysteries of Haikus with this challenge
     </h4>
 
-    <p> Here is a perfect example:</p>
+    <p> {
+        font: 100 3em sans-serif;
+        color: gold;
+        text-decoration: overline wavy yellowgreen;
+        } Here is a perfect example:</p>
 
     <h5>Welcome to Haikus</h5>
     <h5>When submitting your Haiku</h5>
@@ -26,7 +31,9 @@
       Try it for yourself and we will be the judge! To see if you have what it takes to be a
       HAIKU MASTER, just send in your haiku in the form below and submit. Don't forget your
       email address.
-      <h2>Happy Haiku Hunting</h2>
+      <h2>{
+          text-shadow: 4px 4px;
+          Happy Haiku Hunting}</h2>
     </p>
   </div>
 
@@ -41,7 +48,7 @@
     <% end %>
     <%= f.label :user %>:
     <%= f.collection_select :user_id, User.all.order(:name), :id, :name, include_blank: true %><br />
-
+    
     <%= f.label :title %>:
     <%= f.text_field :title %><br />
 

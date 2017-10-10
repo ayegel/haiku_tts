@@ -1,17 +1,17 @@
 body {
+    background-color: #66ccff;
     font-family: 'Cinzel', serif;
-    background-image: url('https://cdn.pixabay.com/photo/2017/04/15/11/51/mt-fuji-2232246_960_720.jpg')
 }
 h1 {
-    font-size: 40px;
+    font-size: 45px;
 }
 
-h2{
-   font-size: 25px; 
-
-}
-
-a:hover {
-    color: darkblue
-    text-decoration: none;
+h2 {
     font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+}    
+    
+    

@@ -2,5 +2,5 @@
 
 <%= render 'form', rating: @rating %>
 
-<%= link_to 'Show', @rating %> |
-<%= link_to 'Back', ratings_path %>
+<%= link_to 'View List of Ratings', haiku_ratings_path(@haiku) %> |
+<%= link_to 'Back To Haiku', @haiku %>

@@ -5,5 +5,5 @@
   <%= @rating.vote %>
 </p>
 
-<%= link_to 'Edit', edit_rating_path(@rating) %> |
-<%= link_to 'Back', ratings_path %>
+<%= link_to 'View List of Ratings', haiku_ratings_path(@haiku) %> |
+<%= link_to 'Back To Haiku', @haiku %>
